@@ -1,0 +1,266 @@
+/* Reset some default styles and provide a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+/* Body and Page Styling */
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #002E5D;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Logo Text Styling */
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #002E5D;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Homepage */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  padding: 20px;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #002E5D;
+}
+
+.homepage h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #002E5D;
+}
+
+.homepage a {
+  background-color: #002E5D;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #002E5D;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.homepage p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #002E5D;
+  padding: 0.5rem 1rem;
+}
+
+.homepage a:hover {
+  background-color: #fff;
+  color: #002E5D;
+}
+
+.homepage img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  width: auto;
+  height: 200px;
+  margin: 0 10px;
+  border: 4px solid #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* About page */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.about h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #002E5D;
+  text-align: center;
+}
+
+/* Faculty Container */
+.faculty-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 20px;
+}
+
+/* Faculty Entry */
+.faculty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.faculty:hover {
+  color: #fff;
+
+  transform: scale(1.05);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.faculty img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.faculty h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #002E5D;
+}
+
+.faculty p {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Form page */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  width: 100%;
+}
+
+.form h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #002E5D;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #002E5D;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form input[type="submit"] {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #002E5D;
+  border-radius: 5px;
+  background-color: #002E5D;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #002E5D;
+}
